@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Skript lubab kasutajal sisestada mitu reisijat on grupis ning kohtade arvu bussis
+
+echo -n "Sisesta reisjate arv grupis "
+read reisijad
+echo -n "Sisesta kohtade arv bussis "
+read kohad
+
+#See rida näitab, mitu bussi on täidetud 
+echo "Täidetud bussid"
+var1=$(("$reisijad / $kohad | bc"))
+echo $var1
+
+#See rida näitab, mitu inimest on maha jäänud
+echo "Mahajäänud inimesed"
+var2=$(($reisijad - $var1 * $kohad))
+echo $var2
+
+
+
+
