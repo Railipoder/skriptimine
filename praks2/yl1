@@ -2,8 +2,5 @@
 
 #See skript on tervituse loomiseks
 
-echo "Tere"
 
-whoami
-
-echo "!"
+echo "Tere,";whoami; echo "!"
