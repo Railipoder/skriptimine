@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Küsib kasutajalt ainepunktide arvu
+echo -n "Sisestage ainepunktide arv "
+read ainepunktid
+echo -n "Sisestage nädalate arv "
+read nadalad
+
+var1=$(("$ainepunktid * 26"))
+echo $var1
+
+var2=$(("$nadalad"))
+echo $var2
+
+aeg="`echo "scale=1; $var1 / $var2" | bc`"
+#aeg=$(($var1 / $var2 | bc)) - see ümardab allapoole
+echo $aeg
+aeg_ymarda="`echo "($aeg +0.9) / 1" | bc`"
+echo $aeg_ymarda
+
+
