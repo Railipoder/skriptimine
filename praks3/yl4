@@ -14,8 +14,15 @@ echo $var1
 
 #See rida näitab, mitu inimest on maha jäänud
 echo "Mahajäänud inimesed"
-var2=$(($reisijad - $var1 * $kohad))
+var2=$(($reisijad % $kohad))
 echo $var2
+
+#See rida näitab, mitu bussi oleks vaja, et kõik ära mahuksid
+if test $var2 -gt 0;
+   then bussid=$(($var1 + 1))
+fi
+#tulemused
+echo "Kokku on vaja $bussid bussi"
 
 
 
