@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Today is"
+
+# put current date as dd-mm-yyyy in $date
+date +"%D"
+
+echo "Time is"
+
+#put current time
+date +"%T"
+
+#put current month calendar
+cal -m11
+
