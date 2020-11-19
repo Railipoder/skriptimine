@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#See skript on tervituse loomiseks
+
+echo "Tere"
+
+whoami
+
+echo "!"
