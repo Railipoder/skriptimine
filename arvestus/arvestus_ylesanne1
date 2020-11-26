@@ -1,0 +1,10 @@
+#!/bin/bash
+#Raili Põder; arvestus_ylesanne1
+#See skript tervitab sisselogitud kasutajat
+#ja väljastab täpse kuupäeva ja kellaaja 
+nimi=`whoami`
+echo "Tere $nimi!"
+aeg=`date +%d.%m.%y`
+kell=`date +%H:%M`
+echo "Täna on $aeg kell $kell"
+
