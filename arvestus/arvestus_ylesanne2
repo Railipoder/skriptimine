@@ -1,0 +1,17 @@
+#!/bin/bash
+#Raili Põder, arvestus_ylesanne2
+#See skript väjastab kasutajale menüü
+#seejärel palub oma valiku teha
+#väljastab vastavalt sisestatud numbrile söögi kirjelduse
+menu=0
+printf "Tänane menüü: \n1)liha ja kartulid \n2)kala ja krõpsud \n3)supp ja salat"
+echo ""
+echo "Tee oma valik (1 või 2 või 3)"
+read menu
+if (($menu==1)); then
+        printf "Väga maitsev, aga jälgi oma tervist! \nHead isu! \n"
+elif (($menu==2)); then
+        printf "Brititoit on maitsev! \nHead isu! \n"
+elif (($menu==3)); then
+        printf "Nii tervislik ja igav... \nHead isu! \n"
+fi
