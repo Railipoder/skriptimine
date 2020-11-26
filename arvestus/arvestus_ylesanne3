@@ -1,0 +1,11 @@
+#!/bin/bash
+#See skript väljastab 7 tärnide rida, mis on kahanevas järjekorras
+#
+for (( i = 7; i >= 1; i-- ))      ###Outer for loop###
+do
+    for (( j = 1 ; j <= $i ; j++ )); do
+        echo -n "*"
+    done
+   echo "" ### print the new line ###
+done
+
